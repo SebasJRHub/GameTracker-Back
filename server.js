@@ -13,7 +13,7 @@ const PORT = process.env.PORT
 const MONGODB_URL = process.env.MONGODB_URL;
 const app = express();
 app.use(cors({
-  origin: "https://SebasJRHub.github.io/GameTracker-Front", // o '*' si quieres permitir todos los orígenes
+  origin: "https://sebasjrhub.github.io/GameTracker-Front", // o '*' si quieres permitir todos los orígenes
   methods: ['GET','POST','PUT','DELETE'],
   credentials: true
 }));
