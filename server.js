@@ -31,9 +31,8 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 
-app.use(verifyToken);
-app.use('/api/resenas', resenaRutas);
-app.use('/api/juegos', juegoRutas);
+app.use('/api/resenas', verifyToken, resenaRutas);
+app.use('/api/juegos', verifyToken, juegoRutas);
 
  
 
