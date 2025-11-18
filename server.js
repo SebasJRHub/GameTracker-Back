@@ -25,7 +25,7 @@ mongoose.connect(MONGODB_URL).then(() => {
 }).catch((error) => {
   console.error("Error al conectar a la base de datos MongoDB:", error);
 });
-app.options('/:path(*)', cors());
+
 
 app.use(express.json());
 
